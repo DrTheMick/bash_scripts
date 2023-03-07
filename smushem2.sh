@@ -19,6 +19,6 @@ for file in ${input_dir}/*.eer ${input_dir}/*.mrc; do
         echo "Converting ${filename} to TIF"
         mrc2smv -A999999 -f -o"${output_dir}/${filename}.tif" "${file}"
         echo "Converting ${filename}.tif to JPG"
-        convert "${output_dir}/${filename}.tif" "${output_dir}/${filename}.jpg"
+        convert "${output_dir}/${filename}.tif" -normalize -resize 25% -quality 90 -negate -depth 8 -auto-level "${output_dir}/${filename}.jpg"
     fi
 done
