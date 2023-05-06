@@ -1,5 +1,5 @@
 #!/bin/bash
-#Converts all the TIF/TIFFs in the folder into jps that span the 8 bit range of a jpg
+#Converts all the TIF/TIFFs in the folder into jpgs that span the 8 bit range of a jpg
 #Makes them smaller and flips the contrast
 #May update later to be more sophisticated...
 
